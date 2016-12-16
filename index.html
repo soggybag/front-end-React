@@ -1,0 +1,105 @@
+<script>
+
+const times2 = x => x * 2;
+const squared = x => x * x;
+
+function doStuff(x, y) {
+  return x * y;
+}
+
+console.log(times2(1));
+console.log(squared(33));
+
+    var a = 44;
+    function test() {
+        console.log("a:"+a);
+        a = 33;
+        return a;
+    }
+    console.log(test());
+    console.log(a);
+
+    // ------
+    
+    console.log("ES6");
+    var b = 55;
+    let c = 66;
+    function testES6() {
+        // console.log(b);
+        console.log("c:"+c);
+        let b = 51; // Scopes b to testES6 function block. 
+        return b;
+    }
+    console.log(testES6());
+    console.log(b);
+    
+    function fakeConstant() {
+        return 'fake-constant';
+    }
+    
+    console.log(fakeConstant());
+    
+    // ES6 constant 
+    const fixedValue = "value-will-not-change";
+    console.log(fixedValue);
+    // fixedValue = "oops"; // Error read only 
+    
+    // Fat arrows
+    var getAName = (name) => {return name};
+    console.log(getAName("Stuff stuff"));
+    var yes = (yes, no) => {
+        console.log(`${yes} ${no}`);
+        if (yes > no) {
+            return "Yes";
+        } else {
+            return "No";
+        }
+    }
+    console.log(yes(12,23));
+    
+    
+    // Scope Problem in es5 :
+
+//var defaultPower = "Laser Vision";
+//
+//function superHero() {
+//  this.defaultPower = "Ice Ray";
+//  setTimeout(function grantPowers() {
+//    console.log("Super " + this.defaultPower);
+//    console.log(this);
+//  })
+//}
+//
+//var IceMan = new superHero();
+//// Console logs erroneous "Super Laser Vision"
+
+// Scope Fix in es5 by using self or _self or that var
+
+//var defaultPower = "Laser Vision";
+//
+//function superHero() {
+//  var self = this;
+//  self.defaultPower = "Ice Ray";
+//  setTimeout(function grantPowers() {
+//    console.log("Super " + self.defaultPower);
+//  })
+//}
+//
+//var IceMan = new superHero();
+// Console logs correct "Super Ice Ray"
+   
+// And with arrow functions:
+
+var defaultPower = "Laser Vision";
+
+function superHero() {
+  this.defaultPower = "Ice Ray";
+  setTimeout(() =>  {
+    console.log("Super " + this.defaultPower);
+  });
+}
+
+var IceMan = new superHero();
+// Console logs correct "Super Ice Ray"
+    
+</script>
