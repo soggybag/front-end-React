@@ -3,6 +3,8 @@
 These are notes for a frontend React class. At the moment these are just rough ideas which will 
 take shape over the next couple weeks. 
 
+
+
 ### Why Learn React?
 
 Why React is a popular forward thinking framework. React is an evolution of the MVC architecture 
@@ -17,8 +19,20 @@ expand your knowledge of JavaScript.
 
 ## Goals
 
-- Own and apply the Reactive data flow
-- Build components 
+**This class will take the form of lessons that students can follow at their own pace.** Rather than
+weekly course material. All of the material will be present at the beginning of the course. Students 
+will be encouraged to work through the material in sections. Each section will be followed up by a 
+series of challenges. Students can self assess their own knowledge of the material by solving the 
+challenges. 
+
+__Ideally students will solve all of the challenges before moving on to a new section!__
+
+- Own and apply the Reactive data flow.
+- Build components.
+- Create single page applications with React.
+- Use open source components. 
+- Use React Router to create multipage sites.
+- Use React Redux to manage application state. 
 
 ## Projects
 
@@ -30,7 +44,6 @@ expand your knowledge of JavaScript.
     - Apply Velocity-React
     - Add some logic to game
     - Use another API
-
 
 ## Rough Outline
 
