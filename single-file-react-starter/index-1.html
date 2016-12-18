@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>React Single Page Starter</title>
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    
+    <style>
+        body {
+            font-family: Helvetica;
+            font-size: 18px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- App -->
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/babel">
+
+        // --------------------------------
+        // Simple Component 
+        // --------------------------------
+        function Title(props) {
+            var styles = {
+                fontSize:props.size, 
+                color:props.color
+            };
+            
+            return (
+                <h1 style={styles}>
+                    {props.title}
+                </h1>
+            );
+        }
+        // --------------------------------
+
+        
+        class ClockSquares extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    count: props.count
+                };
+            }
+        }
+
+
+        function ButtonWidget(props) {
+            return (
+                <button onClick={props.onClick}>{props.label}</button>
+            )
+        }
+    
+        class ToggleButton extends React.Component {
+            constructor(props) {
+                super(props)
+                this.state = {
+                    label: props.label,
+                    isOn: false
+                };
+            }
+            
+            toggle() {
+                console.log("Toggle");
+                this.setState({isOn:!this.state.isOn});
+            }
+            
+            render() {
+                return (
+                    <ButtonWidget onClick={()=>this.toggle()} label={this.state.isOn ? "On" : "Off"} />  
+                );
+            }
+        }
+
+
+
+        
+
+        // -------------------------------------------------
+        class CountDownTimer extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    startingTime: props.startingTime,
+                    currentTime: props.startingTime, 
+                    runningMessage: props.runningMessage,
+                    completedMessage: props.completedMessage,
+                    isRunning: true
+                }
+                this.startTimer();
+            }
+            
+            tick() {
+                const newTime = this.state.currentTime - 1;
+                this.setState({currentTime: newTime});
+                if (this.state.currentTime === 0) {
+                    this.stopTimer();
+                }
+            }
+            
+            startTimer() {
+                // this.setState({isRunning: true});
+                this.timerId = setInterval(()=>{this.tick()}, 1000);
+            }
+            
+            stopTimer() {
+                this.setState({isRunning: false});
+                clearInterval(this.timerId);
+            }
+            
+            render() {
+                const message = this.state.isRunning ? this.state.runningMessage : this.state.completedMessage;
+                
+                return (
+                    <div>
+                        <Title title={this.state.currentTime} size="50px" color="#f0f" />
+                        <Title title={message} size="25px" color="#f0f" />
+                    </div>
+                    
+                );
+            }
+        }
+        // -------------------------------------
+
+        
+        // --------------------------------
+        // Stateful Component 
+        // --------------------------------
+        class Clock extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    date: new Date(),
+                    isOn: true,
+                    clockState: "Off"
+                };
+                this.startTimer();
+            }
+
+            componentWillUnmount() {
+                this.clearTimer();
+            }
+            
+            startTimer() {
+                this.timerId = setInterval(() => this.tick(), 1000);
+            }
+            
+            clearTimer() {
+                clearInterval(this.timerId);
+            }
+
+            tick() {
+                this.setState({date: new Date()});
+            }
+            
+            toggleTimer() {
+                const isOn = !this.state.isOn;
+                const clockState = isOn ? "Off" : "On";
+                this.setState({
+                    isOn: isOn,
+                    clockState: clockState
+                });
+                isOn ? this.startTimer() : this.clearTimer();
+            }
+
+            render() {
+
+                const date = this.state.date;
+                const h = date.getHours();
+                const m = date.getMinutes();
+                const s = date.getSeconds();
+                const displayTime = `${h}:${m}:${s}`;
+
+                return (
+                    <div>
+                        <Title title={displayTime} size="66px" color="#ddd" />
+                        <ButtonWidget onClick={()=>this.toggleTimer()} label={this.state.clockState} />
+                    </div>
+                    
+                );
+            }
+        }
+        // -------------------------------- 
+
+        // Renders reacts virtual DOM. 
+
+        // --------------------------------
+        ReactDOM.render(
+            <div>
+                <Title title="Simple React Starter" size="18px" color="#999" />
+                <Clock interval="10000" />
+                <ButtonWidget label="button widget" />
+                <ToggleButton />
+                <CountDownTimer 
+                    startingTime={10} 
+                    runningMessage="Running..."
+                    completedMessage="Complete!"
+                />
+            </div>, 
+            document.getElementById('app')
+        );
+    </script>
+</body>
+</html>

@@ -1,9 +1,7 @@
 # Front React
 
 These are notes for a frontend React class. At the moment these are just rough ideas which will 
-take shape over the next couple weeks. 
-
-
+take shape over the next couple weeks.
 
 ### Why Learn React?
 
@@ -47,16 +45,33 @@ __Ideally students will solve all of the challenges before moving on to a new se
 
 ## Rough Outline
 
-- Intro JS review
-- Intro React tutorial tic tac toe
-- Weather app
+This is choose you own adventure class. Start at the beginning and work through the course material. 
+If you feel comfortable that you understand it test yourself by completing the challeneges at the 
+end of that section. 
+
+Following the basic material is a section there are projects to build. Finish each of these to a 
+level of completion that you feel good about. 
+
+- Intro React tutorial tic tac toe.
+- Matching game (Don't use a timer to close matches instead two open tiles that don't match close 
+when the next tile is opened) 
+- Weather app.
+- Use another API.
+- Use some React components to display things in new and interesting ways!
+- Make a multipage site with React-router.
+- Application State with Redux.
 
 ### Things to cover
+
+Overview of material covered. 
 
 - Basic JS
     - Array and array methods
     - Objects and properties
 - ES6
+    - http://learnharmony.org/#/?_k=nrupie
+- JSX 
+    - http://buildwithreact.com/tutorial/jsx
 - React intro
 - React Router
 - Redux
@@ -78,6 +93,45 @@ __Ideally students will solve all of the challenges before moving on to a new se
     - Then use React to add an interface
 - React prefab components
     - https://github.com/brillout/awesome-react-components
+
+## Lesson Outline
+
+These are lesson and course material students should follow. 
+
+- Check your JavaScript Skills
+    - *** JS video on arrays, closures, map
+    - *** Challenges
+- ES6 
+    - *** ES6 tutorial practice
+    - *** Challenges
+- React intro 
+    - *** Simple single page intro to Components and React concepts
+    - *** Challenges 
+- React tutorial 
+    - *** Tic Toe Toe Tutorial
+    - *** Challenges Matching game
+- Webpack
+    - *** Intro to Webpack with the simple starter
+    - *** Notes on Import, Export, and Default 
+    - *** Challenges Recreate the Tic Tac Toe, and Matching Game in the Webpack project
+- NPM and Components 
+    - *** Try out some components from the web
+    - Challenges
+- React Router
+    - *** Make a multi page site with React Router
+    - *** Challenges
+- Redux 
+    - *** Some notes on application state load data from local JS file for first example
+    - *** Challenges 
+
+
+- Check your JavaScript knowledge/skills
+    - ??? Need a JS lesson here...
+- Intro to react
+    - http://buildwithreact.com/tutorial/jsx
+    - 
+    - Challenges
+        - 
 
 ### Class outline
 

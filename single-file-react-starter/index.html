@@ -28,15 +28,20 @@
     <!-- JavaScript -->
     <script type="text/babel">
 
-        // Simple Component --------------------------------
+        // --------------------------------
+        // Simple Component 
+        // --------------------------------
         function Title(props) {
             return (
                 <h1>{props.title}</h1>
             );
         }
-        // -------------------------------------------------
+        // --------------------------------
 
-        // Stateful Component ------------------------------
+
+        // --------------------------------
+        // Stateful Component 
+        // --------------------------------
         class Clock extends React.Component {
             constructor(props) {
                 super(props);
@@ -44,35 +49,35 @@
                     date: new Date(),
                     isOn: true
                 };
+                this.timerId = setInterval(() => this.tick(), 1000);
             }
 
-        componentDidMount() {
-            this.timerId = setInterval(() => this.tick(), 1000);
-        }
+            componentWillUnmount() {
+                clearInterval(this.timerId);
+            }
 
-        componentWillUnmount() {
-            clearInterval(this.timerId);
-        }
+            tick() {
+                this.setState({date: new Date()});
+            }
 
-        tick() {
-            this.setState({date: new Date()});
-        }
-        
-        render() {
-            
-            const date = this.state.date;
-            const h = date.getHours();
-            const m = date.getMinutes();
-            const s = date.getSeconds();
-            const displayTime = `${h}:${m}:${s}`;
-            
-            return (
-                <Title title={displayTime} />
-            );
-        }
-    }
+            render() {
 
-        // ------------------------------------------------------------------------ 
+                const date = this.state.date;
+                const h = date.getHours();
+                const m = date.getMinutes();
+                const s = date.getSeconds();
+                const displayTime = `${h}:${m}:${s}`;
+
+                return (
+                    <Title title={displayTime} />
+                );
+            }
+        }
+        // -------------------------------- 
+
+        // Renders reacts virtual DOM. 
+
+        // --------------------------------
         ReactDOM.render(
             <div>
                 <Title title="Simple React Starter" />
@@ -82,5 +87,4 @@
         );
     </script>
 </body>
-
 </html>
