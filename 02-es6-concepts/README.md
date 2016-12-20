@@ -25,6 +25,20 @@ Read and examine the example code [here](./index.html). Then try the challenges 
 
 - [Example 2 ES6 Syntax](./index.html)
 
+### Challenges 
+
+After reading the material here and looking at the example try these challenges. The challenges
+here also appear in comments at the bottom of the example. 
+
+- For each of these challenges use the ideas from this file. Use the "fat arrow functions" 
+()=>{} and the ES6 style class defintion.
+- Define a class that describes weather data it should take three parameters:
+temp, date (use new Date() to make a date object), and description (eg cloudy, rainy etc.)
+- Make an array of three weather Objects each with some different values. 
+- Use reduce to calculate the average temp for all objects. 
+- Use Map to return an array of strings that contain a full description of the weather. 
+For example: "03-23-2016 Cloudy 56 degrees" where the info comes from each of the weather objects. 
+
 ### Review and Reseach
 
 - [Learn ES6 Harmony](http://learnharmony.org/#/?_k=1udm62)

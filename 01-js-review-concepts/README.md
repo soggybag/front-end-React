@@ -83,7 +83,28 @@ example and follow the code contained there for a live example.
 If you feel comfortable solving the challenges move on to the next section. If not follow up the 
 reading material to learn more about the material covered here.
 
-- [Example 1 and challenges](./index.html)
+- [Example 1](./index.html)
+
+### Challenges 
+
+Try the following challenges to test your knowledge of the JS concepts covered above. The challenges
+also appear in comments at the bottom of the example. 
+    
+- Create a function that takes a name and title and returns an object containing these two properties
+The object should look something like: {name: "Rudolf", title: "leader of the pack"}
+- Define an array (nameTitle) then push 5 name/title objects from your function.
+- Write a function that takes a letter (a, b, c, etc) and returns an array containg all of the
+names from nameTitle that begin with that letter. Use array.filter. 
+- Write a function takes a title, and returns an array of all objects that have a matching title. 
+Use filter again. 
+- Write a function that returns an array containing strings made from the names and titles. 
+Each string should look like: "Name Title" or "Diana the duchess of york" or something similar. 
+Use array.map().
+- Create an array of random numbers. Bonus: Use a loop and add 100 random numbers or write a function to return an array of any number of random numbers. 
+- Write a function that returns an aray of all numbers 0.5 and above. use filter, map, or reduce. 
+- Write a function that returns an array of all numbers below 0.5. Use filter, map, or reduce. 
+- Write a function that returns the total of all random numbers. Use filter, map, or reduce. 
+- Write a function that returns the average of all of the random numbers. Use filter, map, or reduce. 
 
 ### Review and Reseach
 
