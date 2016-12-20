@@ -1,0 +1,238 @@
+<script>
+    /* 
+
+    The following examples cover some basic JavaScript concepts that will come up in React. 
+
+    Open this page in a browser and look at the output in the console. 
+
+    */
+    
+    console.log(">>>>>>>> Types");
+    
+    // Define a String
+    var str = "Hello";
+    // Combine strings with the +
+    var message = str + " world";
+    console.log(message);
+    // Numbers combined with strings produce strings!
+    var people = 2;
+    console.log("2" + people); // "22"
+    // Get the number of characters in a string with length
+    var numOfChars = message.length;
+    console.log("'" + message + "' has " + numOfChars + " characters." );
+    // Get a character with char charAt(index)
+    var firstCharOfStr = str.charAt(0);
+    console.log("The first char of '"+str+"' is:"+firstCharOfStr);
+    
+    console.log(">>>>>>>> Numbers");
+    // Numbers can be any decimal or integer value. 
+    var eight = 8;
+    var third = 33.33333;
+    var total = eight + third;
+    console.log(total);
+    // Sometimes numbers aren't exactly what you expect. 
+    var huh = total + 0.3;
+    console.log(huh); 
+    // It's okay just round off 
+    console.log(Math.round(huh));
+    // Or convert to a string with a fixed decimal place
+    console.log(huh.toFixed(2));
+    
+    console.log(">>>>>>>> Testing for Strings and Numbers");
+    // Since variables are not types you will want to check the type at times:
+    console.log(typeof str);
+    console.log(typeof eight);
+    console.log(typeof huh);
+    
+    console.log(">>>>>>>> Array");
+    var array = [str, message];
+    console.log(array);
+    // I think this array needs some numbers
+    // Add values to the end of an array with push()
+    array.push(people);
+    array.push(eight);
+    array.push(third);
+    array.push(huh);
+    console.log(array);
+    // Count the number of items in an array
+    console.log("Array contains: "+array.length+" items");
+    // Important: Arrays are passed by reference!
+    var otherArray = array;
+    // Changing the other changes the first
+    otherArray.push(total);
+    console.log("Array contains: "+array.length+" items");
+    console.log("Other Array contains: "+otherArray.length+" items");
+    
+    // Copy an array with slice()
+    var copiedArray = array.slice();
+    copiedArray.push("New Item");
+    
+    console.log("Array contains: "+array.length+" items");
+    console.log("Copied Array contains: "+copiedArray.length+" items");
+    
+    console.log(array);
+    console.log(copiedArray);
+    
+    // Remove and return the last item from an array
+    console.log(array.pop());
+    console.log(array.pop());
+    
+    // Remove and return the first item from an array
+    console.log(array.shift());
+    
+    console.log(">>>>>>>> Functions");
+    // Functions in JS are weirdly flexible. 
+    // Define a function like this: 
+    function displayMessage(message) {
+        console.log("Message: "+ message);
+    }
+    displayMessage("Hello!");
+    
+    // Or like this: 
+    var addStuff = function(a, b) {
+        return a + b;
+    }
+    console.log(addStuff(12, 23));
+    
+    // Can pass functions around like variables 
+    var billboard = displayMessage; // NO! ()
+    billboard("Woot!");
+    
+    console.log(">>>>>>>> Scope");
+    // Functions create their own scope. Variables declared inside a function are 
+    // local to that function and are not available outside the function block. 
+    function ridiculouslyComplicated(a, b, c) {
+        var ab = a * b;
+        var bc = b / c;
+        var ac = a + c;
+        return ab * bc + ac;
+    }
+    var ridiculousAnswer = ridiculouslyComplicated(12,23,33);
+    console.log(ridiculousAnswer);
+    console.log(typeof ab);
+    console.log(typeof bc);
+    console.log(typeof ac);
+    
+    console.log(">>>>>>>> Closures");
+    // A closure is function that encloses it's scope. 
+    // This function returns a function that is a counter. 
+    // The var count is defined in the same scope as counter so counter encloses it!
+    
+    function makeCounter() {
+        var count = 0;
+        var counter = function() {
+            return count ++;
+        }
+        return counter;
+    }
+    
+    // Make two counters:
+    var apples = makeCounter();
+    var oranges = makeCounter();
+    
+    // Start counting...
+    console.log("Count Apple: "+apples());
+    console.log("Count Apple: "+apples());
+    console.log("Count Apple: "+apples());
+    console.log("Count Apple: "+apples());
+    console.log("Count Apple: "+apples());
+    console.log("Count Apple: "+apples());
+    console.log("Count Oranges: "+oranges());
+    console.log("Count Oranges: "+oranges());
+    
+    // There it's proven people like apples more than oranges! 
+    // In this example the counter function encloses the var count. 
+    
+    console.log(">>>>>>>> filter map reduce");
+    // These are array helpers that play a big part in functional programming and React. 
+    // filter() returns a filtered array.
+    // map() returns an array where each value has been transformed by a function.
+    // reduce() reduces all item in a collection to a single value.
+    
+    // array.filter() returns a new array containing items from the original array. 
+    // Define parameter array that evaluates and item returing true if the item should
+    // be included or false if not. 
+    var onlyStrings = copiedArray.filter(function(item){
+        return typeof item === "string"; // True if item is a string!
+    });
+    
+    console.log(onlyStrings);
+    
+    // Lets do that again
+    
+    var onlyNumbers = copiedArray.filter(function(item) {
+        return typeof item === "number"; // true if item is a number!
+    });
+    
+    console.log(onlyNumbers);
+    
+    // Map returns a new array made by applying a function to each item in the original array.
+    
+    var squaredNumbers = onlyNumbers.map(function(item){
+        return item * item;
+    });
+    
+    console.log(squaredNumbers);
+    
+    // lets do that again
+    var justFixTheNumbers = copiedArray.map(function(item){
+        if (typeof item === "number") {
+            return item.toFixed(1);
+        }
+        return item;
+    });
+    
+    // That's better!
+    console.log(justFixTheNumbers);
+    
+    
+    // Reduce returns a culumative value by applying each value in the array to a function
+    var wtf = copiedArray.reduce(function(a, b) {
+        return a + b;
+    });
+    
+    console.log(wtf);
+    // remember "2" + 2 = "22"
+    
+    // Probably would work better with only numbers!
+    var sillyNumber = onlyNumbers.reduce(function(a,b) {
+       return a + b; 
+    });
+    
+    console.log(sillyNumber);
+    
+    /* 
+    
+    Challenges (finally!)
+    
+    Try the following challenges to test your knowledge of the JS concepts covered above. 
+    
+    */
+    
+    // Create a function that takes a name and title and returns an object containing these two properties
+    // The object should look something like: {name: "Rudolf", title: "leader of the pack"}
+    
+    // Define an array (nameTitle) then push 5 name/title objects from your function.
+    
+    // Write a function that takes a letter (a, b, c, etc) and returns an array containg all of the
+    // names from nameTitle that begin with that letter. Use array.filter. 
+    
+    // Write a function takes a title, and returns an array of all objects that have a matching title. 
+    // Use filter again. 
+    
+    // Write a function that returns an array containing strings made from the names and titles. 
+    // Each string should look like: "Name Title" or "Diana the duchess of york" or something similar. 
+    // Use array.map().
+    
+    // Create an array of random numbers. Bonus: Use a loop and add 100 random numbers or write a function to return an array of any number of random numbers. 
+    
+    // Write a function that returns an aray of all numbers 0.5 and above. use filter, map, or reduce. 
+    
+    // Write a function that returns an array of all numbers below 0.5. Use filter, map, or reduce. 
+    
+    // Write a function that returns the total of all random numbers. Use filter, map, or reduce. 
+    
+    // Write a function that returns the average of all of the random numbers. Use filter, map, or reduce. 
+    
+    
+</script>

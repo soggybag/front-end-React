@@ -65,14 +65,15 @@ when the next tile is opened)
 
 Overview of material covered. 
 
-- Basic JS
+- [Basic JS](js-basic-concept) 
     - Array and array methods
     - Objects and properties
-- ES6
+- [ES6](es6-concepts)
     - http://learnharmony.org/#/?_k=nrupie
 - JSX 
     - http://buildwithreact.com/tutorial/jsx
 - React intro
+    
 - React Router
 - Redux
 - Tic Tac Toe Tutorial
@@ -99,10 +100,10 @@ Overview of material covered.
 These are lesson and course material students should follow. 
 
 - Check your JavaScript Skills
-    - *** JS video on arrays, closures, map
+    - [JavaScript intro and review](./01-js-review-concepts/)
     - *** Challenges
 - ES6 
-    - *** ES6 tutorial practice
+    - [ES6 Concepts](./02-es6-concepts)
     - *** Challenges
 - React intro 
     - *** Simple single page intro to Components and React concepts
