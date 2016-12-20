@@ -1,18 +1,21 @@
 # Front React
 
-These are notes for a frontend React class. At the moment these are just rough ideas which will 
-take shape over the next couple weeks.
+__These are notes for a frontend React class. At the moment these are just rough ideas which will 
+take shape over the next couple weeks.__
 
 ## Why Learn React?
 
-Why React is a popular forward thinking framework. React is an evolution of the MVC architecture 
-that is common in many programming languages. 
+React is a popular forward thinking framework. React is an evolution of the MVC architecture 
+that is common in many programming languages. Here is what the React developers have to say about 
+React: 
 
-React is about building user interfaces from reusable components. 
+https://facebook.github.io/react/
 
-Expect to see React at some larger companies you may work for. 
+Here are a few more reasons you would want to learn React:
 
-React uses ES6 the latest iteration of the JavaScript language. Learning React is a great way to 
+- React is about building user interfaces from reusable components. 
+- Expect to see React at some larger companies you may work for in the future. 
+- React uses ES6 the latest iteration of the JavaScript language. Learning React is a great way to 
 expand your knowledge of JavaScript.
 
 ## Goals
@@ -23,7 +26,7 @@ will be encouraged to work through the material in sections. Each section will b
 series of challenges. Students can self assess their own knowledge of the material by solving the 
 challenges. 
 
-__Ideally students will solve all of the challenges before moving on to a new section!__
+_Ideally students will solve all of the challenges before moving on to a new section!_
 
 - Own and apply the Reactive data flow.
 - Build components.

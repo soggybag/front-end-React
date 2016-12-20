@@ -198,7 +198,7 @@ Read the notes here, then open the [example](./index.html). Be sure to open the 
 to take a look at it. Read the source code and compare it to the notes here. Then work your way 
 through the challenges. 
 
-- [Example React Intro](./index.html)
+- [Example React Components Intro](./index.html)
 
 ## The Sample Code
 

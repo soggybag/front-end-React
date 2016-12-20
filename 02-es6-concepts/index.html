@@ -17,7 +17,13 @@
     
     // Array gets some new helpers
     var array = [1,2,3,4,5,6,7];
+    var [a,b,c] = array;    // Assign the first three values to a, b, c
+    console.log(a,b,c);     // Print a, b, c
+    console.log([...array]);// Destructure array
     
+    var obj = {fun:"Balloons", fruit:"avocados", speed: 36};
+    var {fun, fruit, speed} = obj;
+    console.log(fun, fruit, speed); // Destructures obj to vars
     
     // Functions have some new syntax. Functions can now be defined as: () => {}
     const newFunction = () => {
