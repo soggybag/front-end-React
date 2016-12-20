@@ -7,6 +7,12 @@ creates a virtual DOM where it keeps track of all of the elements that are displ
 virtual DOM allows ReactDOM to identify the elements that need to be updated and instruct the 
 borwser to only update those elements. 
 
+## Transpile
+
+ES6 and JSX need to be transpiled into vanilla JS before it can be run in the browser. There are 
+several stratgeies for this. The example in this section uses uses an in browser process. Later
+in the class we will precompile everything before we get the browser using Webpack. 
+
 ## JSX 
 
 A big piece of React is JSX. JSX is an extension of the JavaScript language that adds an XML/HTML
@@ -186,6 +192,40 @@ ReactDOM.render(
 );
 ```
 
+## Your goal
+
+Read the notes here, then open the [example](./index.html). Be sure to open the example in a browser 
+to take a look at it. Read the source code and compare it to the notes here. Then work your way 
+through the challenges. 
+
+- [Example React Intro](./index.html)
+
+## The Sample Code
+
+The sample code contains two Components: Title and Clock. These are used in the example to create 
+a clock. 
+
+- Title - A simple component that displays a text string in an H1
+- Clock - A smart component that owns and updates a timer, and displays the time in a Title. 
+
+Near the end of the page there is a call to ReactDOM.render(). ReactDOM keeps track of your 
+components in a virtual DOM and renders this to the page. 
+
+## Challenges 
+
+Try these challenges.
+
+- Make a component that displays a message at any font size and color. Pass in the size and color
+as props. 
+- Make a timer that counts down from 10 to 0.
+- Make a timer that counts down from any value to 0. 
+- Make a timer that counts down from any value at any interval.
+- Make a timer that displays a message while the timer is running, and displays another message 
+when the timer  reaches 0. Use state to hold the messages. 
+
+## Research and Notes
+
+- 
 
 
 

@@ -3,7 +3,7 @@
 These are notes for a frontend React class. At the moment these are just rough ideas which will 
 take shape over the next couple weeks.
 
-### Why Learn React?
+## Why Learn React?
 
 Why React is a popular forward thinking framework. React is an evolution of the MVC architecture 
 that is common in many programming languages. 
@@ -31,6 +31,45 @@ __Ideally students will solve all of the challenges before moving on to a new se
 - Use open source components. 
 - Use React Router to create multipage sites.
 - Use React Redux to manage application state. 
+
+## Lesson Outline
+
+These are lesson and course material students should follow. 
+
+- Check your JavaScript Skills
+    - [JavaScript intro and review](./01-js-review-concepts/)
+    - *** Challenges
+- ES6 new JavaScript syntax
+    - [ES6 Concepts](./02-es6-concepts)
+    - *** Challenges
+- React intro to Components
+    - [React Components intro](./03-react-intro)
+    - *** Challenges 
+- React tutorial 
+    - [React Tutorial](./04-react-tutorial)
+    - *** Challenges
+- Webpack
+    - *** Intro to Webpack with the simple starter
+    - *** Notes on Import, Export, and Default 
+    - *** Challenges Recreate the Tic Tac Toe, and Matching Game in the Webpack project
+- NPM and Components 
+    - *** Try out some components from the web
+    - Challenges
+- React Router
+    - *** Make a multi page site with React Router
+    - *** Challenges
+- Redux 
+    - *** Some notes on application state load data from local JS file for first example
+    - *** Challenges 
+
+
+
+
+
+
+
+
+
 
 ## Projects
 
@@ -65,12 +104,12 @@ when the next tile is opened)
 
 Overview of material covered. 
 
-- [Basic JS](js-basic-concept) 
+- [Basic JS](./js-basic-concept) 
     - Array and array methods
     - Objects and properties
-- [ES6](es6-concepts)
+- [ES6](./es6-concepts)
     - http://learnharmony.org/#/?_k=nrupie
-- JSX 
+- [JSX](./)
     - http://buildwithreact.com/tutorial/jsx
 - React intro
     
@@ -94,45 +133,6 @@ Overview of material covered.
     - Then use React to add an interface
 - React prefab components
     - https://github.com/brillout/awesome-react-components
-
-## Lesson Outline
-
-These are lesson and course material students should follow. 
-
-- Check your JavaScript Skills
-    - [JavaScript intro and review](./01-js-review-concepts/)
-    - *** Challenges
-- ES6 
-    - [ES6 Concepts](./02-es6-concepts)
-    - *** Challenges
-- React intro 
-    - *** Simple single page intro to Components and React concepts
-    - *** Challenges 
-- React tutorial 
-    - *** Tic Toe Toe Tutorial
-    - *** Challenges Matching game
-- Webpack
-    - *** Intro to Webpack with the simple starter
-    - *** Notes on Import, Export, and Default 
-    - *** Challenges Recreate the Tic Tac Toe, and Matching Game in the Webpack project
-- NPM and Components 
-    - *** Try out some components from the web
-    - Challenges
-- React Router
-    - *** Make a multi page site with React Router
-    - *** Challenges
-- Redux 
-    - *** Some notes on application state load data from local JS file for first example
-    - *** Challenges 
-
-
-- Check your JavaScript knowledge/skills
-    - ??? Need a JS lesson here...
-- Intro to react
-    - http://buildwithreact.com/tutorial/jsx
-    - 
-    - Challenges
-        - 
 
 ### Class outline
 
@@ -255,3 +255,5 @@ Webpack tutorial
     - http://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/
 - More in ES6
     - http://codepen.io/k3no/post/es6-sampler-plate
+- JSX 
+    - https://facebook.github.io/react/docs/jsx-in-depth.html

@@ -4,16 +4,6 @@ Knowledge of JavaScript is essential to learning React. React is built entirely 
 components you create will require JS to make them work. The material presented here is far from 
 complete it tries to cover important JS concepts that apply when working with React. 
 
-## Your goals 
-
-Follow the examples [here](./index.html) and complete the challenges at the end. Open the  
-example and follow the code contained there for a live example. 
-
-If you feel comfortable solving the challenges move on to the next section. If not follow up the 
-reading material to learn more about the material covered here.
-
-- [Example 1 and challenges](./index.html)
-
 ## Types 
 
 JavaScript has a few types I'll break them down here as:
@@ -84,6 +74,16 @@ Functions in JS are similar to other languages they take parameters in and retur
 Functions are also the basis for class objects and define scope.
 
 [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
+
+## Your goals 
+
+Follow the examples [here](./index.html) and complete the challenges at the end. Open the  
+example and follow the code contained there for a live example. 
+
+If you feel comfortable solving the challenges move on to the next section. If not follow up the 
+reading material to learn more about the material covered here.
+
+- [Example 1 and challenges](./index.html)
 
 ### Review and Reseach
 
