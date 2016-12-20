@@ -27,5 +27,5 @@ Read and examine the example code [here](./index.html). Then try the challenges 
 
 ### Review and Reseach
 
-- http://learnharmony.org/#/?_k=1udm62
+- [Learn ES6 Harmony](http://learnharmony.org/#/?_k=1udm62)
 - 
