@@ -41,16 +41,12 @@ These are lesson and course material students should follow.
 
 - Check your JavaScript Skills
     - [JavaScript intro and review](./01-js-review-concepts/)
-    - *** Challenges
 - ES6 new JavaScript syntax
     - [ES6 Concepts](./02-es6-concepts)
-    - *** Challenges
 - React intro to Components
-    - [React Components intro](./03-react-intro)
-    - *** Challenges 
+    - [React Components intro](./03-react-intro) 
 - React tutorial 
     - [React Tutorial](./04-react-tutorial)
-    - *** Challenges
 - Webpack
     - *** Intro to Webpack with the simple starter
     - *** Notes on Import, Export, and Default 
@@ -71,19 +67,10 @@ These are lesson and course material students should follow.
 
 
 
+----------------------------------------------------
 
 
 
-## Projects
-
-- React, ES6, JSX
-    - Tutorial project Tic Tac Toe, Concentration game.
-- Redux
-    - Weather App
-- Challenges stretch goals
-    - Apply Velocity-React
-    - Add some logic to game
-    - Use another API
 
 ## Rough Outline
 
@@ -102,6 +89,17 @@ when the next tile is opened)
 - Use some React components to display things in new and interesting ways!
 - Make a multipage site with React-router.
 - Application State with Redux.
+
+## Projects
+
+- React, ES6, JSX
+    - Tutorial project Tic Tac Toe, Concentration game.
+- Redux
+    - Weather App
+- Challenges stretch goals
+    - Apply Velocity-React
+    - Add some logic to game
+    - Use another API
 
 ### Things to cover
 
