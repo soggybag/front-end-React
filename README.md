@@ -18,6 +18,8 @@ Here are a few more reasons you would want to learn React:
 - React uses ES6 the latest iteration of the JavaScript language. Learning React is a great way to 
 expand your knowledge of JavaScript.
 
+
+
 ## Goals
 
 **This class will take the form of lessons that students can follow at their own pace.** Rather than
@@ -49,6 +51,9 @@ These are lesson and course material students should follow.
     - [React Tutorial](./04-react-tutorial)
 - Webpack
     - *** Intro to Webpack with the simple starter
+    - http://jpsierens.com/tutorial-react-redux-webpack/
+    - https://www.codementor.io/tamizhvendan/tutorials/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
+    - https://www.codementor.io/javascript/tutorial/module-bundler-webpack-getting-started-guide
     - *** Notes on Import, Export, and Default 
     - *** Challenges Recreate the Tic Tac Toe, and Matching Game in the Webpack project
 - NPM and Components 
@@ -69,8 +74,7 @@ These are lesson and course material students should follow.
 
 ----------------------------------------------------
 
-
-
+Everything below this line is notes and needs to be cleaned up or removed. 
 
 ## Rough Outline
 
