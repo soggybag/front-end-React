@@ -29,6 +29,25 @@ There are a couple strategies you can use.
 
 - Show hidden files https://www.google.com/#safe=off&q=terminal+show+hidden+files
 - create the file as babelrc (without the .) set the text, then add the . to the beginning of the file name. 
+- You can also use `$ open .babelrc` in the terminal. 
+
+**entry: APP_DIR + '/index.jsx'**
+
+The .jsx extension is not recognized by many code editors. While it might feel more accurate to use
+the .jsx extension on files that contain jsx code, the .js extension works also, and this might work 
+better for your work flow and tools. 
+
+webpack.config.js: `entry: APP_DIR + '/index.js'`
+
+If you do this you need to rename `index.jsx` to `index.js`!
+
+**UNMET PEER DEPENDENCY babel-core@^6.0.0**
+
+If you see this error when running `npm i react react-dom -S` try: 
+
+`npm i babel-core`
+
+You may have to run `npm i react react-dom -S` again. 
 
 
 
@@ -102,10 +121,10 @@ and you are including only this method.
 Consider this change: 
 
 ```
-import React {Component} from 'react';
+import React {Component} from 'react'; // Added {Component here}
 import AwesomeComponent from './AwesomeComponent.js';
 
-class App extends Component {
+class App extends Component { // Removed React. here
   render () {
     return (
         <div>
@@ -121,10 +140,10 @@ now you only need Component in place of React.Component.
 
 ## Webpack React Challenge
 
-Once you've worked through the Webpack tutorial test our your Webpack installation by rebuilding one 
-of the earlier projects in the Webpack project. To get the most out this you will use a modified 
-strategy to managing your components. Instead of placing them all in the same file you will create a 
-.js or .jsx file for each component. Notice this done in the last tutorial! 
+Once you've worked through the Webpack tutorial try these challenges: 
+
+- Try installing the Webpack Hot Loader: http://gaearon.github.io/react-hot-loader/getstarted/
+- Use the Webpack project to rebuild one of the earlier projects. Make a .js file for each component. 
 
 ## Webpack React Boilerplate/Starter
 

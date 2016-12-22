@@ -13,12 +13,13 @@ https://facebook.github.io/react/
 
 Here are a few more reasons you would want to learn React:
 
+- Client side pages rendering has advantages.
+    - Avoids unnecessary server requests.
+    - Supports lazy loading, loads assets as needed.
 - React is about building user interfaces from reusable components. 
 - Expect to see React at some larger companies you may work for in the future. 
 - React uses ES6 the latest iteration of the JavaScript language. Learning React is a great way to 
 expand your knowledge of JavaScript.
-
-
 
 ## Goals
 
@@ -30,9 +31,8 @@ challenges.
 
 _Ideally students will solve all of the challenges before moving on to a new section!_
 
-- Own and apply the Reactive data flow.
-- Build components.
 - Create single page applications with React.
+- Build reusable components.
 - Use open source components. 
 - Use React Router to create multipage sites.
 - Use React Redux to manage application state. 
