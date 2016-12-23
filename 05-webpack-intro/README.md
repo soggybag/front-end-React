@@ -138,21 +138,45 @@ class App extends Component { // Removed React. here
 Here you imported React, and Component (a sub module of React). Notice `class App extends Component`, 
 now you only need Component in place of React.Component. 
 
+## Webpack Dev Server
+
+Webpack Dev Server is a local web server that you can easily add to your Webpack projects. Use it to
+test your projects locally before deploying to a live web host. Read more here: 
+
+- https://webpack.github.io/docs/webpack-dev-server.html
+
+Run webpack dev server the previous example puts `index.html` in `src/client/` use that as the path. 
+
+`webpack-dev-server --content-base src/client/`
+
+Now visit: `http://localhost:8080` this should serve your 
+
 ## Webpack React Challenge
 
 Once you've worked through the Webpack tutorial try these challenges: 
 
 - Try installing the Webpack Hot Loader: http://gaearon.github.io/react-hot-loader/getstarted/
 - Use the Webpack project to rebuild one of the earlier projects. Make a .js file for each component. 
+- Follow this tutorial it covers everything we've talked about: https://medium.com/wdstack/dont-be-afraid-of-react-library-guide-81f673d24684#.m832qcdcu
 
 ## Webpack React Boilerplate/Starter
 
 The whole process of setting up Webpack is a little involved. Understand that you shouldn't have to 
-do it for every new project, unless you want to! You can create the WEbpack example above and save it 
-as a starter project for future projects, or use one of the many Webpack boilerplate/starter open
-source projects on the web. 
+do it for every new project, unless you want to! You can create the Webpack example above and save it 
+as a starter project for future projects. 
 
+**You can delete the node_modules folder**. This allows you to store your starter project with out
+all of the dependancies. When starting a new project copy the folder, navigate in the terminal and 
+run `npm install`, npm will download and install of the dependancy files again. 
 
+You don't have to use your boiler plate instead use one of the many provided by the open source 
+community. You should read the notes and pay attention but, generally they will work in the same 
+way as described above. Here a few that I found: 
+
+- https://github.com/erikras/react-redux-universal-hot-example
+- https://github.com/nicksp/redux-webpack-es6-boilerplate
+- https://github.com/davezuko/react-redux-starter-kit
+- https://github.com/StephenGrider/ReduxSimpleStarter
 
 ## Resources
 
