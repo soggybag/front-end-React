@@ -7,9 +7,35 @@ JavaScript and React.
 
 ## React Router Tutorial
 
-This tutorial walks through everything we have learned so far and adds React Router on top. 
+Follow this tutorial. Covered here is everything we have talked about so far. This tutorial set up 
+a web pack project, and builds a simple React app. This includes React Router to add navigation. 
 
-- https://medium.com/wdstack/dont-be-afraid-of-react-library-guide-81f673d24684#.m832qcdcu
+- https://github.com/reactjs/react-router-tutorial
+
+**Notes** 
+
+The source code in the tutorial uses a different approach to creating objects! While it may look
+different it's actually the same! 
+
+The examples use `React.createClass()`, for example: 
+
+```
+import React from 'react';
+
+export default React.createClass({
+    ...
+})
+```
+Where previously we had used class and extends, for example: 
+```
+import React, {Component} from 'react';
+
+export default class Home extends Component {
+    ...
+}
+```
+Notice the import statement! createComponent is a method of React (the default export for the react
+module) and Component is a sub module of the react module. 
 
 ## Notes 
 

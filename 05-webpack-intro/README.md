@@ -180,6 +180,8 @@ way as described above. Here a few that I found:
 
 ## Resources
 
+- More React + Webpack Tutorials
+    - https://medium.com/wdstack/dont-be-afraid-of-react-library-guide-81f673d24684#.m832qcdcu
 - http://webpack.github.io/docs/what-is-webpack.html
 - https://blog.risingstack.com/using-react-with-webpack-tutorial/
 - https://www.codementor.io/tamizhvendan/tutorials/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
