@@ -59,9 +59,17 @@ These are lesson and course material students should follow.
 - NPM and Components 
     - *** Try out some components from the web
     - Challenges
+- Boorstrap with Webpack and React
+    - *** npm install bootstrap...
+    - *** Apply Bootstrap stuff...
+    - *** Challenges 
+        - Style one of the earlier projects 
+        - Style another of the ealier projects
+        - Modify bootstrap for fun and profit 
 - React Router
     - *** Make a multi page site with React Router
     - *** Challenges
+        - 
 - Redux 
     - *** Some notes on application state load data from local JS file for first example
     - *** Challenges 
