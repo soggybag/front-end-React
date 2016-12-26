@@ -50,12 +50,11 @@ These are lesson and course material students should follow.
 - React tutorial 
     - [React Tutorial](./04-react-tutorial)
 - Webpack
-    - *** Intro to Webpack with the simple starter
-    - http://jpsierens.com/tutorial-react-redux-webpack/
-    - https://www.codementor.io/tamizhvendan/tutorials/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
-    - https://www.codementor.io/javascript/tutorial/module-bundler-webpack-getting-started-guide
-    - *** Notes on Import, Export, and Default 
-    - *** Challenges Recreate the Tic Tac Toe, and Matching Game in the Webpack project
+    - [Webpack Tutorial](./05-webpack-intro)
+- React Router
+    - [React Router](./05-react-router)
+    - *** Make a multi page site with React Router
+    - *** Challenges
 - NPM and Components 
     - *** Try out some components from the web
     - Challenges
@@ -66,9 +65,7 @@ These are lesson and course material students should follow.
         - Style one of the earlier projects 
         - Style another of the ealier projects
         - Modify bootstrap for fun and profit 
-- React Router
-    - *** Make a multi page site with React Router
-    - *** Challenges
+
         - 
 - Redux 
     - *** Some notes on application state load data from local JS file for first example

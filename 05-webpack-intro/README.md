@@ -185,3 +185,16 @@ way as described above. Here a few that I found:
 - http://webpack.github.io/docs/what-is-webpack.html
 - https://blog.risingstack.com/using-react-with-webpack-tutorial/
 - https://www.codementor.io/tamizhvendan/tutorials/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
+
+
+
+
+
+
+### Random notes needs to be cleaned up...
+- *** Intro to Webpack with the simple starter
+- http://jpsierens.com/tutorial-react-redux-webpack/
+- https://www.codementor.io/tamizhvendan/tutorials/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
+- https://www.codementor.io/javascript/tutorial/module-bundler-webpack-getting-started-guide
+- *** Notes on Import, Export, and Default 
+- *** Challenges Recreate the Tic Tac Toe, and Matching Game in the Webpack project

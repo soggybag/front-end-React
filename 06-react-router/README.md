@@ -18,7 +18,6 @@ The source code in the tutorial uses a different approach to creating objects! W
 different it's actually the same! 
 
 The examples use `React.createClass()`, for example: 
-
 ```
 import React from 'react';
 
@@ -36,6 +35,8 @@ export default class Home extends Component {
 ```
 Notice the import statement! createComponent is a method of React (the default export for the react
 module) and Component is a sub module of the react module. 
+
+
 
 ## Notes 
 
