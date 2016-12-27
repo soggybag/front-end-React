@@ -53,11 +53,13 @@ These are lesson and course material students should follow.
     - [Webpack Tutorial](./05-webpack-intro)
 - React Router
     - [React Router](./05-react-router)
-    - *** Make a multi page site with React Router
     - *** Challenges
+        - Make a multi page site with React Router
 - NPM and Components 
     - *** Try out some components from the web
     - Challenges
+        - Explore components and see what's available
+        - Add components to your multipage site
 - Boorstrap with Webpack and React
     - *** npm install bootstrap...
     - *** Apply Bootstrap stuff...

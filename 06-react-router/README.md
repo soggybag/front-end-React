@@ -12,7 +12,7 @@ a web pack project, and builds a simple React app. This includes React Router to
 
 - https://github.com/reactjs/react-router-tutorial
 
-**Notes** 
+### **Notes** 
 
 The source code in the tutorial uses a different approach to creating objects! While it may look
 different it's actually the same! 
@@ -37,6 +37,10 @@ Notice the import statement! createComponent is a method of React (the default e
 module) and Component is a sub module of the react module. 
 
 
+## Challenges 
 
-## Notes 
+Once you've finished the tutorial try implementing react router on your own with these challenges. 
+
+- Make a mulit-page site. This can be simple with static content. 
+- 
 
