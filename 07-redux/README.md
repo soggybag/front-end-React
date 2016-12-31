@@ -1,12 +1,22 @@
 # Redux 
 
+Redux manages application state. It is used with but not a required part of React. You could use 
+other systems to store application state with a React app, or use Redux with a non react app. 
 
-- Follow the basics tutorial.
-    - http://www.jchapron.com/2015/08/14/getting-started-with-redux/
-    - https://medium.com/front-end-developers/handcrafting-an-isomorphic-redux-application-with-love-40ada4468af4#.mk3tqobs1
-    - http://redux.js.org/docs/basics/
-- Then move on to the advanced tutorial
+Redux is not easy but is simple.  
 
+## Simple vs Easy
+
+If you haven't watch this talk you should! This talk compares simple vs easy in software development. 
+
+- https://www.infoq.com/presentations/Simple-Made-Easy
+
+## Redux Tutorial
+
+- https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree
+
+
+---------------
 
 # Notes
 
@@ -68,6 +78,14 @@ of your code:
 The function (1), usually called mapStateToProps(), takes in the application state as a param and 
 returns the portion of the state the component/container will use as props. Remember Application 
 State is a single JS Object, so this function takes in the entire App State.
+
+
+- Follow the basics tutorial.
+    - http://www.jchapron.com/2015/08/14/getting-started-with-redux/
+    - https://medium.com/front-end-developers/handcrafting-an-isomorphic-redux-application-with-love-40ada4468af4#.mk3tqobs1
+    - http://redux.js.org/docs/basics/
+- Then move on to the advanced tutorial
+
 
 
 ## Resources 

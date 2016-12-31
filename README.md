@@ -75,7 +75,9 @@ These are lesson and course material students should follow.
 
 
 
+Massive list of React resources:
 
+- https://github.com/enaqx/awesome-react
 
 
 
