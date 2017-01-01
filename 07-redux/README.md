@@ -3,18 +3,34 @@
 Redux manages application state. It is used with but not a required part of React. You could use 
 other systems to store application state with a React app, or use Redux with a non react app. 
 
-Redux is not easy but is simple.  
+Redux is is based on Functional Programming. This makes it a good introduction to Functional 
+programming concepts. 
+
+Redux is not easy but it is simple. 
 
 ## Simple vs Easy
 
-If you haven't watch this talk you should! This talk compares simple vs easy in software development. 
+If you haven't watch this talk you should! This talk compares simple vs easy in software development.
+This video is long, if you don't have time to watch it now find some time later. It's well worth it
+for the perspective it provides. 
 
 - https://www.infoq.com/presentations/Simple-Made-Easy
 
 ## Redux Tutorial
 
-- https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree
+This is a great tutorial follow it all the way to the end. These videos walk through Redux in a 
+meticulous way. Along the way they explain how Redux functions under the hood. 
+While the examples here might be a little hard to follow exactly as presented come up with your own 
+solutions to follow along.
 
+Besides Redux the videos contain great info on ES6 syntax, advice on software structure, and 
+refactoring code. 
+
+- https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree 
+
+It is important that you get all the way to end of these videos. The last few videos cover very 
+important concepts. Some of the videos leading up to these last videos are illustrating how the 
+system works while not show best practice. 
 
 ---------------
 
