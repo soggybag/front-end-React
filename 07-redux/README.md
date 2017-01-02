@@ -28,46 +28,38 @@ refactoring code.
 
 - https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree 
 
+These videos are by Dan Abramov a co author of Redux. Don't miss the notes and cheatsheet at the 
+bottom of the page!
+
 It is important that you get all the way to end of these videos. The last few videos cover very 
 important concepts. Some of the videos leading up to these last videos are illustrating how the 
 system works while not show best practice. 
 
----------------
-
 # Notes
 
 Redux represents **application state**. Application state is data that belongs to the app as a whole. 
-Products for sale, a list of posts, the details about a product, the contents of a post could all 
+Data that is shared across all of the many different components an app might have. 
+Products for sale, lists of posts, settings and more could all 
 represent application state. This is different from Component state which represents only the current 
-state of that component. Application may be displayed in a Component. Changing the state of a 
+state of that component. Component state might represent the setting of a switch, the choice of a menu
+item, or the contents of a form. 
+
+Changing the state of a 
 Component doesn't change the state of the app. On the other hand changing application state changes 
 the app and potentially changes the state of many Components. 
 
-Redux aggregates all application state into a single JS object. Rather than storing data across 
-several different elements, imagine multiple variables containing objects, numbers, strings, arrays 
-etc. Redux collects all data in a single JavaScript Object. All the pieces of data are stored as 
-keys on this object. 
+Redux aggregates all application state into a single JS object. Redux collects all data in a single 
+JavaScript Object. All the pieces of data are stored as keys on this object. 
 
-When working with Redux you will never mutate the data store directly. Instead your your UI will
-specify the changes that need to be made through Actions and Reducers. An Action specifies 
-what needs to change and supply a new value or values. Reducers decide how these changes are applied 
-to Application state. Actions are JavaScript Objects, Reducers are functions. 
+When working with Redux you never mutate the data store directly. Instead your UI will
+specify the changes that need to be made through Actions and Reducers. An Action is a plain JS
+Object with properties that name what needs to change and hold new values. 
+Reducers are JS functions that decide how these changes are applied 
+to the Application state. 
 
-React acts as the view layer. Redux has the job of holding the data that describes your application. 
-While React has the job of displaying that state through Components. React Components also send 
-messages asking for changes in state, and pass new data that Redux incorporates into it's state
-storage. react never changes the Application state directly. Changes are always applied through 
-Actions and Reducers which are managed by Redux. 
+React acts as the view layer. Components display data you supply. We will use the name Container 
+to describe Components that display data from the application state. 
 
-**More explanation in these videos**
-
-These videos are by Dan Abramov a co author of Redux. Watch at least the first four videos in the 
-series. There is roughly 120 mins of videos that cover the whole of React/Redux usage. These are 
-well explained. 
-
-https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree?play=yes
-
-**** Need to find an easy way to recreate these examples ****
 
 # Components, Containers, props, state and Application state
 
@@ -78,7 +70,12 @@ a menu might need to know which menu item is currently selected, a group of radi
 need to keep track of the currently selected button. 
 
 When a component is connected to Application State we will call it a **Container**. Containers want 
-to map some piece of Application State to their props to display this state in some way. 
+to map some piece of Application State to their props to display this state in some way. Containers
+update Application state changes because they subscribe to state changes from Redux. 
+
+
+
+-----------------
 
 # React Redux (it's a lib) and ReactRedux.connect()
 
