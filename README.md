@@ -41,23 +41,23 @@ _Ideally students will solve all of the challenges before moving on to a new sec
 
 These are lesson and course material students should follow. 
 
-- Check your JavaScript Skills
+1. Check your JavaScript Skills
     - [JavaScript intro and review](./01-js-review-concepts/)
-- ES6 new JavaScript syntax
+2. ES6 new JavaScript syntax
     - [ES6 Concepts](./02-es6-concepts)
-- React intro to Components
+3. React intro to Components
     - [React Components intro](./03-react-intro) 
-- React tutorial 
+4. React tutorial 
     - [React Tutorial](./04-react-tutorial)
-- Webpack
+5. Webpack
     - [Webpack Tutorial](./05-webpack-intro)
-- React Boilerplate
-    - *** React Boilerplate 
-    - http://www.reactboilerplate.com
-- React Router
+6. React Router
     - [React Router](./06-react-router)
-    - *** Challenges
-        - Make a multi page site with React Router
+7. Redux 
+    - [Redux](./07-redux)
+    - *** Some notes on application state load data from local JS file for first example
+    - *** Challenges    
+    
 - NPM and Components 
     - *** Try out some components from the web
     - Challenges
@@ -72,9 +72,7 @@ These are lesson and course material students should follow.
         - Modify bootstrap for fun and profit 
 
         - 
-- Redux 
-    - *** Some notes on application state load data from local JS file for first example
-    - *** Challenges 
+
 
 Massive list of React resources:
 
