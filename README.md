@@ -51,8 +51,11 @@ These are lesson and course material students should follow.
     - [React Tutorial](./04-react-tutorial)
 - Webpack
     - [Webpack Tutorial](./05-webpack-intro)
+- React Boilerplate
+    - *** React Boilerplate 
+    - http://www.reactboilerplate.com
 - React Router
-    - [React Router](./05-react-router)
+    - [React Router](./06-react-router)
     - *** Challenges
         - Make a multi page site with React Router
 - NPM and Components 
@@ -73,11 +76,25 @@ These are lesson and course material students should follow.
     - *** Some notes on application state load data from local JS file for first example
     - *** Challenges 
 
-
-
 Massive list of React resources:
 
 - https://github.com/enaqx/awesome-react
+
+## Project Ideas
+
+- Make a Blog with Gatsby
+    - https://github.com/gatsbyjs/gatsby
+- Make a really complete Tic Tac Toe game
+    - While not a great "product" this would be a great platform for learning. Add these features:
+        - Use Router to create several "pages" for Game, Instructions, scores etc. 
+        - Modify the game play. Try making connect 4 or other grid based game. 
+        - Look closely at the components and think of how you can best abstract these. 
+        - Use Redux to hold the game state. 
+        - Use Firebase or other service: 
+            - Add user login
+            - Keep track of high scores
+            - Make it two player
+- 
 
 
 
