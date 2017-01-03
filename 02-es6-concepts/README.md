@@ -1,7 +1,7 @@
 # ES6 Concepts 
 
-ES6 is the new version of JavaScript. Really there is less functional change and lots of new 
-syntax. You can do all of the same old things in new ways! 
+ES6 is the new version of JavaScript. There is less functional change and lots of new 
+syntax. Which means you can do all of the same old things in new ways! 
 
 ES6 is only partially supported in modern browsers, the language itself is not fully released yet. 
 By learning ES6 now you will be ready up to date when it is released. 
@@ -11,13 +11,28 @@ By learning ES6 now you will be ready up to date when it is released.
 A small functional and syntactical change in ES6 allows variables to be defined with
 
 - var : Nothing new here define a variable. Declared in a function sets the scope of that variable to the function. 
-- let : This is new, and the same as var except in terms of scope, let scopes variables to the block. 
-- const : Defines a constant. Variables defined const can't be modified. 
+- let : This is new, and the same as var except in terms of scope, let scopes variables to the block. Think of a block as all of the between { and }. 
+- const : Defines a constant. Variables defined const can't be mutated. 
 
-## Fat Arrow functions 
+## Fat Arrow functions () => {}
 
-Fat Arrow functions give you a new way to define functions. You will see these used often when a
-function is used as a parameter. 
+Fat Arrow functions give you a new way to define functions. 
+
+Old function: 
+
+```
+function myFunc(param) {}
+```
+or 
+```
+var myFunc = function(param) {}
+```
+
+New functions: 
+
+```
+myFunc = (param) => {}
+```
 
 ## Your goals 
 

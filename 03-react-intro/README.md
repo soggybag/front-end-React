@@ -1,17 +1,27 @@
 # React Intro
 
-React is a library made to create User Interfaces in JavaScript Applications. 
+React is a library made to create User Interfaces in JavaScript Applications. In the context of 
+MVC architecture React would represent the V (View) layer. 
+
+React apps are built around components. Components represent presentational elements. In other
+words Components are things you see on the screen. Components are composable. Components can 
+contain other components. 
 
 React is built around performance. The DOM is slow and inefficient. ReactDOM (a part of React)
 creates a virtual DOM where it keeps track of all of the elements that are displayed. Using a 
 virtual DOM allows ReactDOM to identify the elements that need to be updated and instruct the 
-borwser to only update those elements. 
+borwser to only update those elements.
+
+React introduces new elements to JavaScript: JSX. JSX provides an addition to the JS lanaguage 
+that allows you to write HTML tags along side your JS code. 
 
 ## Transpile
 
-ES6 and JSX need to be transpiled into vanilla JS before it can be run in the browser. There are 
-several stratgeies for this. The example in this section uses uses an in browser process. Later
-in the class we will precompile everything before we get the browser using Webpack. 
+ES6 and JSX need to be transpiled into vanilla JS before it can be run in the browser. You will 
+need a tool for this. 
+
+The example in this section uses uses an in browser process. Later in the class we will precompile 
+everything before we get the browser using Webpack. 
 
 ## JSX 
 
@@ -79,9 +89,9 @@ with the JS class keyword).
 
 Quoted values assigned to an attribute are always String literal values. 
 
-`<Mathy notANumber="2+2"></Mathy> // props.notANumber = "2+2"`
+`<Mathy notANumber="2+2"></Mathy> // props.notANumber == "2+2"`
 
-`<Mathy numeric={2+2} /> // props.numeric = 4`
+`<Mathy numeric={2+2} /> // props.numeric == 4`
 
 **Style**
 
@@ -106,41 +116,45 @@ const myStyles = {
 <div style={myStyles}></div>
 ```
 
+What's going on in the style examples? Style is set as JS Object with style properties named with
+JS style property names. 
+
 **return()**
 
-Often you will have a multiline JSX express to return from a Component in these cases wrap it 
+Often you will have a multiline JSX expression to return from a Component. In these cases wrap it 
 all in the ( and ) and everything is okay!
 
 ```
 function ComplicatedWidget(props) {
-   return (
+   return ( // <-- 
     <div style={props.color}>
         <Clocky>{this.state.time}</Clocky>
         <ToggleButton title={this.state.isOn} />
     </div>
-   ); 
+   );       // <--
 } 
 ```
 
-## Components 
+## Components, props, and state
 
 Components are at the core of React. Components represent resuable UI widgets. Imagine everything
-you see on web page or web application as a Component. Components can be nested, so a complex 
+you see in a web page or web application as a Component. Components can be nested, so a complex 
 UI element might be made up of several components. 
 
 Components come in two flavors simple and smart (or stateful). 
 
 - Simple Components take in values, called props that describe how the component should be 
 configured and what it should display. 
-    - props is always a JS Object
+    - props is a JS Object.
     - Simple Components are written as a function that take props as a parameter and return JSX. 
+    
 - Smart Components use props in the same as simple Components. These Components also keep 
 an internal state. Think of state as variables owned by the Component. Changing a Component's 
 state causes it to update it's appearance. 
     - Smart Components are written as a JS Class. With the following features.
-        - Take props in the constructor
+        - Take props in the constructor.
         - Implements a render() method that returns JSX. 
-        - Must extend React.Component
+        - Must extend React.Component.
 
 **Simple Component**
 ```
@@ -152,6 +166,7 @@ function Widget(props) {
     );
 } 
 ```
+A simple component is just a function that takes props as a prameter. 
 
 **Smart Component** 
 ```
@@ -173,12 +188,14 @@ class SmartWidget extends React.Component {
 }
 ```
 
+A smart component is written as a class. It must include a render() method that returns JSX. 
+
 ## ReactDOM
 
-ReactDOM supplies a virtual DOM to track your Components. All React Components must be a children 
+ReactDOM supplies a virtual DOM to track your Components. All React Components must be children 
 of a top level element that is added to ReactDOM via ReactDOM.render(). ReactDOM also takes an 
 HTML element that will the target where it will render it's virtual DOM. In practice this is set 
-up once as boilerplate code and forgotten about. 
+up once as boilerplate code. 
 
 A typical use of ReactDOM might look like this: 
 
@@ -191,6 +208,8 @@ ReactDOM.render(
     document.getElementById('app')
 );
 ```
+
+This renders the Title and Clock components. 
 
 ## Your goal
 

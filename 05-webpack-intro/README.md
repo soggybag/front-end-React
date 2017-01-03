@@ -1,10 +1,14 @@
 # Webpack Intro
 
-Webpack is a "module bundler". webpack takes modules with dependencies and generates static assets 
+Webpack is a "module bundler". Webpack takes modules with dependencies and generates static assets 
 representing those modules. In other words Webpack preprocesses your files and combines them into
 fewer files that will run your web app. 
 
-For more info read this: http://webpack.github.io/docs/what-is-webpack.html
+Weppack works with NPM packages. These are small libraries each containing a snippet of code. 
+When builing a project Webpack will combine all of these files into a single JS file that your
+production app will use.
+
+For more info read this: http://webpack.github.io/docs/what-is-webpack.html 
 
 ## Webpack tutorial 
 
@@ -28,10 +32,11 @@ Files that begin with a . are hidden! This makes it tough to edit this file once
 There are a couple strategies you can use. 
 
 - Show hidden files https://www.google.com/#safe=off&q=terminal+show+hidden+files
-- create the file as babelrc (without the .) set the text, then add the . to the beginning of the file name. 
-- You can also use `$ open .babelrc` in the terminal. 
+- create the file as babelrc (without the .) set the text, then add the . to the beginning of the file 
+name. 
+- Use `$ open .babelrc` in the terminal to open the file. 
 
-**entry: APP_DIR + '/index.jsx'**
+**entry: APP_DIR + '/index.jsx' and the .jsx extension**
 
 The .jsx extension is not recognized by many code editors. While it might feel more accurate to use
 the .jsx extension on files that contain jsx code, the .js extension works also, and this might work 
@@ -49,8 +54,6 @@ If you see this error when running `npm i react react-dom -S` try:
 
 You may have to run `npm i react react-dom -S` again. 
 
-
-
 ## Deconstructing the Tutorial
 
 What happened here? Take a look at the folder you created and examine the contents. 
@@ -62,7 +65,7 @@ Open it and look at the contents.
     - Last you'll see scripts. This is a list of commands you can have Node run for you. In place 
     of typing `webpack -d --watch` you can use `npm dev`. Convenient!
     - For more info on package.json: https://docs.npmjs.com/files/package.json
-- **webpack.config.js** - This file is written in JavaScript. Open it up and take  look. 
+- **webpack.config.js** - This file is written in JavaScript. Open it up and take look. 
     - Names the app directory. This is where your production build will live. 
         - Take a look at src/client/app. Here you'll find index.js along with your components. 
         - Reconcile this with the APP_DIR of `src/client/app` above.
@@ -84,7 +87,7 @@ used by our project, or files used by Node and Webpack. These files might includ
     - Look in node_modules you should see lots of files. Everytime you used npm install or npm i
     npm copied files to this folder, often these files require other files, npm takes care this. 
     
-## Import, Export, Default
+## Import
 
 After working through the short React portion of the tutorial above you may have noticed some new 
 syntax using: import, export, and default. These are used with bundling system. Open index.js. 
@@ -145,33 +148,36 @@ test your projects locally before deploying to a live web host. Read more here:
 
 - https://webpack.github.io/docs/webpack-dev-server.html
 
-Run webpack dev server the previous example puts `index.html` in `src/client/` use that as the path. 
+When you ran Webpack dev server in the previous example, Webpack created files in `src/client/`.
+This is the path for your production app. This also started the Webpack local server. Run the 
+line below in the console. 
 
 `webpack-dev-server --content-base src/client/`
 
-Now visit: `http://localhost:8080` this should serve your 
+Now visit: `http://localhost:8080`. This should serve your web site.
 
 ## Webpack React Challenge
 
 Once you've worked through the Webpack tutorial try these challenges: 
 
 - Try installing the Webpack Hot Loader: http://gaearon.github.io/react-hot-loader/getstarted/
-- Use the Webpack project to rebuild one of the earlier projects. Make a .js file for each component. 
-- Follow this tutorial it covers everything we've talked about: https://medium.com/wdstack/dont-be-afraid-of-react-library-guide-81f673d24684#.m832qcdcu
+- Use the Webpack project to rebuild one of the earlier projects. 
+- Follow this tutorial it covers everything we've talked about: 
+https://medium.com/wdstack/dont-be-afraid-of-react-library-guide-81f673d24684#.m832qcdcu
 
 ## Webpack React Boilerplate/Starter
 
 The whole process of setting up Webpack is a little involved. Understand that you shouldn't have to 
-do it for every new project, unless you want to! You can create the Webpack example above and save it 
-as a starter project for future projects. 
+do it for every new project, unless you want to! 
 
-**You can delete the node_modules folder**. This allows you to store your starter project with out
-all of the dependancies. When starting a new project copy the folder, navigate in the terminal and 
-run `npm install`, npm will download and install of the dependancy files again. 
+You can create the Webpack example above and save it 
+as a starter project for future projects. In this case **You can delete the node_modules folder**. 
+This allows you to store your starter project with out all of the dependancies. When starting a new 
+project copy the folder, navigate the new dicrectory in the terminal and run `npm install`, npm will 
+download and install of the dependancy files again. 
 
-You don't have to use your boiler plate instead use one of the many provided by the open source 
-community. You should read the notes and pay attention but, generally they will work in the same 
-way as described above. Here a few that I found: 
+Use one of the many provided by the open source community. You should read the notes and pay attention 
+but, generally they will work in the same way as described above. Here a few that I found: 
 
 - https://github.com/erikras/react-redux-universal-hot-example
 - https://github.com/nicksp/redux-webpack-es6-boilerplate
@@ -186,15 +192,8 @@ way as described above. Here a few that I found:
 - https://blog.risingstack.com/using-react-with-webpack-tutorial/
 - https://www.codementor.io/tamizhvendan/tutorials/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
 
-
-
-
-
-
 ### Random notes needs to be cleaned up...
-- *** Intro to Webpack with the simple starter
+
 - http://jpsierens.com/tutorial-react-redux-webpack/
 - https://www.codementor.io/tamizhvendan/tutorials/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
 - https://www.codementor.io/javascript/tutorial/module-bundler-webpack-getting-started-guide
-- *** Notes on Import, Export, and Default 
-- *** Challenges Recreate the Tic Tac Toe, and Matching Game in the Webpack project
