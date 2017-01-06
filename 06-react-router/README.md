@@ -68,11 +68,10 @@ You would import these in this way:
 import DefaultClass, {OtherClass, id_name} from './somefile'
 ```
 
-
 ## Challenges 
 
 Once you've finished the tutorial try implementing react router on your own with these challenges. 
 
 - Make a multi-page site. This can be simple with static content. 
-- 
+
 
