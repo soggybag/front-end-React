@@ -1,9 +1,9 @@
 # React Router 
 
 React Router manages which components are displayed based on the current address shown in the URL of 
-the borwser. Use it to create multi-page web sites with React. Sites created with React are still only
-a single HTML page. They will content as if they are made up of multiple pages through the 
-magic of JavaScript and React Router. 
+the borwser. Use it to create multi-page web sites with React. Sites created with React are still 
+only a single HTML page. They act as if they are made up of multiple pages through the magic of React 
+Router. 
 
 ## React Router Tutorial
 
@@ -73,5 +73,9 @@ import DefaultClass, {OtherClass, id_name} from './somefile'
 Once you've finished the tutorial try implementing react router on your own with these challenges. 
 
 - Make a multi-page site. This can be simple with static content. 
+- Make a milti-page site using Router where the pages are made up of the previous React tutorial 
+projects and challenges.
+- Use Router and React to mock up your product class project.
+- After finishing any of the above challenges. Add a navigation bar that shows active links. 
 
 
