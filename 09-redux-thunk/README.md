@@ -62,7 +62,11 @@ const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 ...
 ```
 
+Normally an Action creator returns an Action which is Object with a type and other properties. 
+Thunk is invoked when we return a function instead of an Object from our Action Creator. 
 
+The function returned must take `dispatch` as a parameter. When your request resolves you will call 
+dispatch with your Action Object, and possibly any data you loaded as part of the request. 
 
 **actions/index.js**
 
@@ -70,15 +74,15 @@ const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 export function fetchStuff() {
     // Make a request with Axios
     const request = axios.get("test.json");
-  // Handle the request with Thunk by returning a function. 
-  return (dispatch) => {        // Thunk calls the function with the dispatch object.
-    request.then((data)=>{      // The request runs and will be resolved with a promise. 
-      dispatch({                // When resolved use dispatch to send the Action object.
-        type: 'FETCH_STUFF',
-        payload: data
-      })
-    });
-  }
+    // Handle the request with Thunk by returning a function. 
+    return (dispatch) => {          // Thunk calls the function with the dispatch object.
+        request.then((data)=>{      // The request runs and will be resolved with a promise. 
+            dispatch({              // When resolved use dispatch to send the Action object.
+                type: 'FETCH_STUFF',
+                payload: data
+            })
+        });
+    }
 }
 ```
 
