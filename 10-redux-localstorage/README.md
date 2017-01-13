@@ -12,6 +12,25 @@ Local Stroage is a vanilla JavaScript feature that saves key values locally. It 
 types like strings and numbers. Since JavaScript Objects can be converted to JSON and JSON is 
 really just a String you can save your Redux store as to local storage. 
 
+## localStorage
+
+Local Starage is a feature that allows you to save data locally. This is similar to a cookie or a 
+session, though local storage is not cleared when a browsing session is ended. Data is 
+
+### localStorage.setItem("key", value)
+
+### localStorage.getItem("key")
+
+## JSON
+
+### JSON.parse()
+
+### JSON.stringify()
+
+
+
+
+
 The tutorial here covers a working system to save the Redux store to local storage in 4 short 
 videos, less than 15 mins. Then follows this up with a larger discussion of the subject. 
 
