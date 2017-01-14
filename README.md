@@ -6,7 +6,10 @@ take shape over the next couple weeks.__
 ## Why Learn React?
 
 React is a popular forward thinking framework. React is an evolution of the MVC architecture 
-that is common in many programming languages. Here is what the React developers have to say about 
+that is common in many programming languages. Redux is an extendsion to Rect that manages Application 
+state/data using functional programming concepts. 
+
+Here is what the React developers have to say about 
 React: 
 
 https://facebook.github.io/react/

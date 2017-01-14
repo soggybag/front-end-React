@@ -18,14 +18,14 @@ with your React projects.
 
 Add Axios to your project with: 
 
-`$ npm install axios`
+`$ npm install --save axios`
 
 Make a request with: 
 
 ```
 axios.get('/someurl/someendpoint').then((response)=>{
     // do stuff with your data...
-}).catch((error)=>{
+}).catch((error) => {
     // There was an error handle it here...
 });
 ```
