@@ -59,8 +59,17 @@ These are lesson and course material students should follow.
 7. Redux 
     - [Redux](./07-redux)
     - *** Some notes on application state load data from local JS file for first example
-    - *** Challenges    
-    
+    - *** Challenges  
+8. Middleware 
+    - [Middleware](./08-middleware)
+    - *** Challenges?
+9. Redux Thunk 
+    - [Redux Thunk](./09-redux-thunk)
+    - *** Challenges 
+10. Redux Local Storage
+    - [Redux Local Storage](./10-redux-localstorage)
+    - *** Challenges 
+
 - NPM and Components 
     - *** Try out some components from the web
     - Challenges

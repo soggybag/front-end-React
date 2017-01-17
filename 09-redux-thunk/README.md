@@ -105,3 +105,11 @@ export default function stuffReducer(state = false, action) {
 }
 ```
 
+## Challenges 
+
+Load some data into your app with Axios and make it part of the Application State with Redux
+
+- Load data from a file. JSON works good. 
+- Load JSON data from a service. 
+    - OpenWeatherMap makes a good place to start their API is easy. 
+    - Try 
