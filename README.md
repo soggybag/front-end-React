@@ -69,16 +69,14 @@ These are lesson and course material students should follow.
     with React where the content displayed is linked to the URL in the address bar. 
     - [React Router](./06-react-router)
 7. Redux 
-    - Redux is library for managing application state. Redux uses 
-    - [Redux](./07-redux)
-    - *** Some notes on application state load data from local JS file for first example
-    - *** Challenges  
+    - Redux is library for managing application state. Redux uses fucntional programming concepts.  
+    - [Redux](./07-redux) 
 8. Middleware 
+    - Learn about using middleware to handle asynchronous data along with applcation state and Redux. 
     - [Middleware](./08-middleware)
-    - *** Challenges?
 9. Redux Thunk 
+    - Use Thunk, a middleware for Redux, to handle your async requests. 
     - [Redux Thunk](./09-redux-thunk)
-    - *** Challenges 
 10. Redux Local Storage
     - [Redux Local Storage](./10-redux-localstorage)
     - *** Challenges 

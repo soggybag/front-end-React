@@ -3,9 +3,11 @@
 Readux Thunk solves the problem of handling asynchornous actions in Redux. Redux Thunk is
 a middleware for Redux. 
 
+> In computer programming, a thunk is a subroutine that is created, often automatically, to assist a call to another subroutine. Thunks are primarily used to represent an additional calculation that a subroutine needs to execute, or to call a routine that does not support the usual calling mechanism. They have a variety of other applications to compiler code generation and in modular programming.
+
 In use a Thunk is simple. Action creators normally return an Action Object describing 
 the action. When you have an asynchronous action this becomes a problem. You can't return an action
-with data because the data hasn't been loaded yet. A thunk hanldes this by passing a function in place
+with data because the data hasn't been loaded yet. A thunk handles this by passing a function in place
 of the object. This function receives the dispatch from Redux and will return the action object when 
 the async request resolves.
 
@@ -112,4 +114,8 @@ Load some data into your app with Axios and make it part of the Application Stat
 - Load data from a file. JSON works good. 
 - Load JSON data from a service. 
     - OpenWeatherMap makes a good place to start their API is easy. 
-    - Try 
+    - Find an intersting API here: 
+
+## Resources 
+
+- https://en.wikipedia.org/wiki/Thunk
