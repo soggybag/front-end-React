@@ -25,6 +25,10 @@
     var {fun, fruit, speed} = obj;
     console.log(fun, fruit, speed); // Destructures obj to vars
     
+    var restructeredObj = {fun, fruit, speed}; // This produces an obj with keys matching the names of the variables.
+    console.log(">>>>> Restructered Obj");
+    console.log(restructeredObj);
+    
     // Functions have some new syntax. Functions can now be defined as: () => {}
     const newFunction = () => {
         var message = "Hello World";
