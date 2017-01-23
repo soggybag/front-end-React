@@ -32,7 +32,7 @@ A Number is any number float or int, positive or negative.
 
 Notable methods: 
 
-- `isNaN()` : Returns true if the value is a number. (NaN == Not a Number) 
+- `isNaN()` : Returns true if the value is NOT a number. (NaN == Not a Number) 
 - `toFixed(points)` : Returns a string representation of the number with a fixed number of decimal 
 points. 
 
