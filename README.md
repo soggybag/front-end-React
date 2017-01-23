@@ -1,13 +1,15 @@
 # Front React
 
-__These are notes for a frontend React class. At the moment these are just rough ideas which will 
-take shape over the next couple weeks.__
+Frontend React, Redux, and ES6 JS
 
 ## Why Learn React?
 
 React is a popular forward thinking framework. React is an evolution of the MVC architecture 
-that is common in many programming languages. Redux is an extendsion to Rect that manages Application 
-state/data using functional programming concepts. 
+that is common in many programming languages. React focusses on creating reusable components 
+that work with a unidirectional data flow. React solves many of the problems found in complex UI.
+
+Redux is an extension to Rect that manages Application state/data using functional programming 
+concepts. 
 
 Here is what the React developers have to say about 
 React: 
@@ -16,7 +18,7 @@ https://facebook.github.io/react/
 
 Here are a few more reasons you would want to learn React:
 
-- Client side pages rendering has advantages.
+- Client side rendering has advantages.
     - Avoids unnecessary server requests.
     - Supports lazy loading, loads assets as needed.
 - React is about building user interfaces from reusable components. 
@@ -26,23 +28,24 @@ expand your knowledge of JavaScript.
 
 ## Goals
 
-**This class will take the form of lessons that students can follow at their own pace.** Rather than
-weekly course material. All of the material will be present at the beginning of the course. Students 
+This class will take the form of lessons that students can **follow at their own pace.** Rather than
+weekly course material all of the material will be presented at the beginning of the course. Students 
 will be encouraged to work through the material in sections. Each section will be followed up by a 
 series of challenges. Students can self assess their own knowledge of the material by solving the 
 challenges. 
 
-_Ideally students will solve all of the challenges before moving on to a new section!_
+Ideally students will solve all of the challenges before moving on to a new section!
+
+## Competencies
 
 - Create single page applications with React.
-- Build reusable components.
-- Use open source components. 
+- Build reusable components with React.
 - Use React Router to create multipage sites.
 - Use React Redux to manage application state. 
+- Use open source components. 
+- Manage packages with NPM, Node, and Webpack.
 
-## Lesson Outline
-
-These are lesson and course material students should follow. 
+## Lesson Outline 
 
 1. Check your JavaScript Skills
     - Short review of JavaScript with a focus on JS skills that apply to React.

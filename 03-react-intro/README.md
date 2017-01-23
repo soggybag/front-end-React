@@ -1,18 +1,18 @@
 # React Intro
 
 React is a library made to create User Interfaces in JavaScript Applications. In the context of 
-MVC architecture React would represent the V (View) layer. 
+MVC architecture React would represent the V or View layer. 
 
 React apps are built around components. Components represent presentational elements. In other
-words Components are things you see on the screen. Components are composable. Components can 
-contain other components. 
+words Components are things you see on the screen and interact with. Components are composable, 
+that is components can contain other components, which can contain still more components. 
 
 React is built around performance. The DOM is slow and inefficient. ReactDOM (a part of React)
-creates a virtual DOM where it keeps track of all of the elements that are displayed. Using a 
-virtual DOM allows ReactDOM to identify the elements that need to be updated and instruct the 
-borwser to only update those elements.
+creates a virtual DOM where it stores all of the elements that are displayed. Using a 
+virtual DOM allows ReactDOM to identify the elements that need to be updated and instructs the 
+browser to only update those elements that have changed.
 
-React introduces new elements to JavaScript: JSX. JSX provides an addition to the JS lanaguage 
+React introduces a new extension to JavaScript: JSX. JSX provides an addition to the JS lanaguage 
 that allows you to write HTML tags along side your JS code. 
 
 ## Transpile
@@ -20,22 +20,48 @@ that allows you to write HTML tags along side your JS code.
 ES6 and JSX need to be transpiled into vanilla JS before it can be run in the browser. You will 
 need a tool for this. 
 
-The example in this section uses uses an in browser process. Later in the class we will precompile 
-everything before we get the browser using Webpack. 
+The example in this section uses uses an in browser process. Later in class we will precompile 
+everything using Webpack. 
 
 ## JSX 
 
 A big piece of React is JSX. JSX is an extension of the JavaScript language that adds an XML/HTML
-like syntax to regular JavaScript. JSX must be compiled before it can be used in a browser. 
+like syntax to regular JavaScript. JSX must be compiled before it can be used in a browser.
 
-Attributes are used to pass values into a JSX element. These values are attached to props (see 
-Components below for more about props).
+In short JSX allows you to write HTML like tags alongside vanilla JS. These tags generate React 
+HTML code within your React components. 
 
-JSX might look like this: 
+```
+function Display() {
+    return <div>Hello World</div>;
+}
+```
+
+You can see the function above returns a div tag. There is no need for quotes. The tag is not treated 
+as a string. This is JSX. The function above could be a simple React Component!
+
+JSX has a few syntactical rules that you will learn along the way. 
+
+In HTML tags are those name value pairs that appear within the opening tag. For example: 
+
+`<div class="foo"></div>`
+
+Class is an attribute foo is the value. 
+
+In JSX attributes are used normally but if you want use execute JS within an attribute use {} around
+the value. For example: 
+
+```
+var name = "bar";
+<div class={bar} width={2 * 100}></div>
+```
+
+A React component might be written with JSX and might look like this: 
 
 ```
 <MyWidget message="Hello World" /> 
 ```
+
 JSX must always have a top level element. The follow is NOT legal!
 
 ```
@@ -122,7 +148,7 @@ JS style property names.
 **return()**
 
 Often you will have a multiline JSX expression to return from a Component. In these cases wrap it 
-all in the ( and ) and everything is okay!
+all in the `(` and `)` and everything is okay!
 
 ```
 function ComplicatedWidget(props) {
@@ -141,20 +167,12 @@ Components are at the core of React. Components represent resuable UI widgets. I
 you see in a web page or web application as a Component. Components can be nested, so a complex 
 UI element might be made up of several components. 
 
-Components come in two flavors simple and smart (or stateful). 
+Components come in two flavors simple and smart or stateful. 
 
 - Simple Components take in values, called props that describe how the component should be 
 configured and what it should display. 
-    - props is a JS Object.
-    - Simple Components are written as a function that take props as a parameter and return JSX. 
-    
-- Smart Components use props in the same as simple Components. These Components also keep 
-an internal state. Think of state as variables owned by the Component. Changing a Component's 
-state causes it to update it's appearance. 
-    - Smart Components are written as a JS Class. With the following features.
-        - Take props in the constructor.
-        - Implements a render() method that returns JSX. 
-        - Must extend React.Component.
+    - props is a JS Object: `{name:"joe", age:33}`.
+    - Simple Components are written as a function that take props as a parameter and return JSX.
 
 **Simple Component**
 ```
@@ -166,9 +184,19 @@ function Widget(props) {
     );
 } 
 ```
-A simple component is just a function that takes props as a prameter. 
+
+A simple component is just a function that takes props as a prameter and returns JSX. 
+    
+- Smart Components use props in the same way as simple Components. These Components also keep 
+an internal state. Think of state as variables owned by the Component. Changing a Component's 
+state causes it to update. 
+    - Smart Components are written as a JS Class. With the following features.
+        - Take props in the constructor.
+        - Implements a render() method that returns JSX. 
+        - Must extend React.Component.
 
 **Smart Component** 
+
 ```
 class SmartWidget extends React.Component {
     constructor(props) {
@@ -213,8 +241,8 @@ This renders the Title and Clock components.
 
 ## Your goal
 
-Read the notes here, then open the [example](./index.html). Be sure to open the example in a browser 
-to take a look at it. Read the source code and compare it to the notes here. Then work your way 
+Open the [example](./index.html) in a browser and a text editor. 
+Read the source code and compare it to the notes here. Then work your way 
 through the challenges. 
 
 - [Example React Components Intro](./index.html)
@@ -222,7 +250,7 @@ through the challenges.
 ## The Sample Code
 
 The sample code contains two Components: Title and Clock. These are used in the example to create 
-a clock. 
+a simple clock. 
 
 - Title - A simple component that displays a text string in an H1
 - Clock - A smart component that owns and updates a timer, and displays the time in a Title. 
@@ -242,9 +270,7 @@ as props.
 - Make a timer that displays a message while the timer is running, and displays another message 
 when the timer  reaches 0. Use state to hold the messages. 
 
-## Research and Notes
 
-- 
 
 
 

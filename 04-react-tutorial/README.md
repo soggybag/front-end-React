@@ -8,6 +8,9 @@ This tutorial creates a Tic Tac Toe game using React. This is the official React
 Facebook. The tutorial introduces some new concepts while covering the things we talked about 
 in the previous 3 lessons. 
 
+This tutorial runs in Codepen and doesn't require any special setup. You may want to create an 
+account if you want to save your work. 
+
 ## Challenges 
 
 There are challenges at the end of the tutorial try and do them! 

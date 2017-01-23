@@ -3,32 +3,34 @@
 ES6 is the new version of JavaScript. There is less functional change and lots of new 
 syntax. Which means you can do all of the same old things in new ways! 
 
-ES6 is only partially supported in modern browsers, the language itself is not fully released yet. 
-By learning ES6 now you will be ready up to date when it is released. 
+ES6 is only partially supported in modern browsers, the language itself has not been fully released 
+yet. By learning ES6 now you will be ready up to date when it is released. 
 
 ### var, let, and const
 
 A small functional and syntactical change in ES6 allows variables to be defined with
 
-- var : Nothing new here define a variable. Declared in a function sets the scope of that variable to the function. 
-- let : This is new, and the same as var except in terms of scope, let scopes variables to the block. Think of a block as all of the between { and }. 
-- const : Defines a constant. Variables defined const can't be mutated. 
+- `var` : Nothing new here define a variable. Declared in a function sets the scope of that variable to the function. 
+- `let` : This is new, and the same as var except in terms of scope, let scopes variables to the block. Think of a block as all of the between { and }. 
+- `const` : Defines a constant. Variables defined const can't be mutated. 
 
 ## Fat Arrow functions () => {}
 
-Fat Arrow functions give you a new way to define functions. 
+Fat Arrow functions give you a new cincise way to define functions. 
 
 Old function: 
 
 ```
 function myFunc(param) {}
 ```
+
 or 
+
 ```
 var myFunc = function(param) {}
 ```
 
-New functions: 
+New "fat arrow" functions: 
 
 ```
 myFunc = (param) => {}
@@ -57,4 +59,4 @@ For example: "03-23-2016 Cloudy 56 degrees" where the info comes from each of th
 ### Review and Reseach
 
 - [Learn ES6 Harmony](http://learnharmony.org/#/?_k=1udm62)
-- 
+
