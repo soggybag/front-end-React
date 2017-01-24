@@ -88,6 +88,19 @@
     const joe = new Person("Joe", "Grand Wizir");
     console.log(joe.getTitle());
     
+    
+    var aaa = [{a:1, a:2, a:3}]
+    
+    console.log("----------------------");
+    var answer = aaa.reduce((a, b, c)=>{
+        console.log(a)
+        console.log(b)
+        console.log(c)
+        return a + b;
+    });
+    
+    console.log(answer);
+    
     // Challenges! 
     // For each of these challenges use the ideas from this file. Use the "fat arrow functions" 
     // ()=>{} and the ES6 style class defintion.
