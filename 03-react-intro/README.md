@@ -12,7 +12,7 @@ creates a virtual DOM where it stores all of the elements that are displayed. Us
 virtual DOM allows ReactDOM to identify the elements that need to be updated and instructs the 
 browser to only update those elements that have changed.
 
-React introduces a new extension to JavaScript: JSX. JSX provides an addition to the JS lanaguage 
+React introduces a new extension to JavaScript: JSX. JSX provides an addition to the JS language 
 that allows you to write HTML tags along side your JS code. 
 
 ## Transpile
@@ -163,7 +163,7 @@ function ComplicatedWidget(props) {
 
 ## Components, props, and state
 
-Components are at the core of React. Components represent resuable UI widgets. Imagine everything
+Components are at the core of React. Components represent reusable UI widgets. Imagine everything
 you see in a web page or web application as a Component. Components can be nested, so a complex 
 UI element might be made up of several components. 
 
@@ -185,7 +185,7 @@ function Widget(props) {
 } 
 ```
 
-A simple component is just a function that takes props as a prameter and returns JSX. 
+A simple component is just a function that takes props as a parameter and returns JSX. 
     
 - Smart Components use props in the same way as simple Components. These Components also keep 
 an internal state. Think of state as variables owned by the Component. Changing a Component's 
