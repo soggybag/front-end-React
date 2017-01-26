@@ -14,7 +14,7 @@ a web pack project, and builds a simple React app. This includes React Router to
 
 ### **Notes** 
 
-**React.creatClass() vs class extends Component**
+**React.createClass() vs class extends Component**
 
 The source code in the tutorial uses a different approach to creating objects! While it may look
 different it's actually the same! 
