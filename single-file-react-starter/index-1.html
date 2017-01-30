@@ -13,9 +13,6 @@
             font-size: 18px;
         }
         
-        h1 {
-            text-align: center;
-        }
     </style>
 </head>
 
@@ -32,11 +29,11 @@
         // Simple Component 
         // --------------------------------
         function Title(props) {
-            var styles = {
-                fontSize:props.size, 
-                color:props.color
-            };
-            
+
+            const styles = {color:"red", fontSize:"18px", fontFamily:"Georgia", ...props.styles};
+
+            console.log(styles);
+
             return (
                 <h1 style={styles}>
                     {props.title}
@@ -191,6 +188,8 @@
                 );
             }
         }
+
+
         // -------------------------------- 
 
         // Renders reacts virtual DOM. 
@@ -198,7 +197,8 @@
         // --------------------------------
         ReactDOM.render(
             <div>
-                <Title title="Simple React Starter" size="18px" color="#999" />
+                
+                <Title title="Simple React Starter" styles={{fontSize:"12px", color:"#333"}} />
                 <Clock interval="10000" />
                 <ButtonWidget label="button widget" />
                 <ToggleButton />

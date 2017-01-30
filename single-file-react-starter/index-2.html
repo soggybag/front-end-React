@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>React Single Page Starter</title>
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    
+    <style>
+        body {
+            font-family: Helvetica;
+            font-size: 18px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- App -->
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/babel">
+
+        // --------------------------------
+        // Simple Component 
+        // --------------------------------
+        function Title(props) {
+            return (
+                <div>
+                    <h1>{props.title}</h1>
+                </div> 
+            );
+        }
+        // --------------------------------
+
+        // var props = {message: "Foo Bar"}
+        function Hello(props) {
+            return <h2>{props.message}</h2>;
+        }
+
+
+        // <Listy list={["A", "B", "C"]} title="My List" />
+
+        function Listy(props) {
+            const list = props.list.map(function(item, index){
+                return <li key={index}>{item}</li>;
+            })
+            
+            return (
+                <div>
+                    <h1>{props.title}</h1>
+                    <ul>{list}</ul>
+                </div>
+            );
+        }
+
+
+        // <LightSwitch isOn={true} count={111} />
+        
+        class LightSwitch extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    isOn: props.isOn,
+                    count: props.count
+                };
+            }
+            
+            toggleSwitch() {
+                console.log("Toggle Switch!");
+                
+                this.setState({
+                    isOn: !this.state.isOn,
+                    count: this.state.count + 1
+                });
+            }
+            
+            render() {
+                return (
+                    <div>
+                        <button onClick={()=>{
+                            this.toggleSwitch();   
+                        }}>Click {this.state.count}</button>
+                        
+                        <h2>{this.state.isOn ? "Light On" : "Light Off"}</h2>
+                    </div>
+                );
+            }
+        }
+        
+
+
+        // --------------------------------
+        // Stateful Component 
+        // --------------------------------
+        class Clock extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    date: new Date(),
+                    isOn: true
+                };
+                this.timerId = setInterval(() => this.tick(), 1000);
+            }
+
+            componentWillUnmount() {
+                clearInterval(this.timerId);
+            }
+
+            tick() {
+                this.setState({date: new Date()});
+            }
+
+            render() {
+
+                const date = this.state.date;
+                const h = date.getHours();
+                const m = date.getMinutes();
+                const s = date.getSeconds();
+                const displayTime = `${h}:${m}:${s}`;
+
+                return (
+                    <Title title={displayTime} />
+                );
+            }
+        }
+        // -------------------------------- 
+
+        // Renders reacts virtual DOM. 
+
+        // --------------------------------
+        ReactDOM.render(
+            <div>
+                <LightSwitch isOn={false} count={111} />
+                <Hello message="Foo Bar!" />
+                <Hello message="Hello World" />
+                <Listy list={["Apple", "Banana", "Cherry"]} title="Fruits" />
+                <Title title="Simple React Starter" />
+                <Clock />
+            </div>, 
+            document.getElementById('app')
+        );
+    </script>
+</body>
+</html>
