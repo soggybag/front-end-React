@@ -129,6 +129,9 @@ Require the image:
 
 `<Image source={require('../images/Cloud-rain.png')} />`
 
+Here the image file would need to be in a folder named `images` in the root 
+of the project. 
+
 #### Challenge
 
 - Import an image and display it as part of your app. 
