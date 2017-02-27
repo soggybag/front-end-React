@@ -94,3 +94,42 @@ end up in the console.
 - Read the weather.js component carefully. 
 - Combine the components to display the weather. 
     - Use a View and Text component to dispay the temp as large text. 
+    
+## React native components
+
+React Native supports many of the Components found on mobile. 
+
+### ScrollView 
+
+ScrollView is a component that creates scrolling content. It is very easy to 
+use. Keep in mind that ScrollView displays content that overflows the 
+ScrollView while the ScrollView itself must limit the area it covers. 
+Usually you will want to make sure the view containing the ScrollView takes 
+up the whole screen usually this is means that container view has a a flex 
+value of 1. Scroll view can horizontal and vertical (set the horizontal prop).
+
+#### Challenge 
+
+Try the ScrollView in your app. 
+
+- Create a ScrollView that contains all of your weather data. 
+- Use the Daily forcast data to display in a scrollView. 
+- Add daily data to a scrollView set to horizonal.
+
+### Images
+
+Add images to your project folder. To display an image in your app you'll 
+need to require it. 
+
+Import the Image component: 
+
+`import { Text, View, StyleSheet, ScrollView, Image } from 'react-native';`
+
+Require the image:
+
+`<Image source={require('../images/Cloud-rain.png')} />`
+
+#### Challenge
+
+- Import an image and display it as part of your app. 
+- Import an image that matches the "icon" for the weather. 
