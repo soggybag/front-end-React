@@ -136,3 +136,50 @@ of the project.
 
 - Import an image and display it as part of your app. 
 - Import an image that matches the "icon" for the weather. 
+
+### JavaScipt Dates and formatting
+
+You'll need to format dates. Darkskys provides the date as a Unix Timestamp. 
+You will need to convert this to a JS Date. JS time stamps are tracked in 
+miliseconds while Uniz Timestamps are tracked in Seconds. 
+
+Make a new Date Object with: 
+
+`new Date()`
+
+Make a new Date Object with a Unix timestamp like this: 
+
+`new Date(timestamp * 1000)`
+
+With a Date object you can produce dates in various default formats, make a custom
+date, or extract a feature of the date like the hours, minutes, seconds, day, month, 
+or year. 
+
+Take a look at
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+#### Challenges 
+
+- Format the Date provided by DarkSkys. 
+    - Use of the default date formats like `date.toLocaleString()`
+
+### Organizing Components
+
+React projects are built on components. With well planned structure and organization 
+your projects components will make your projects more flexible and easier to 
+manage. Here are a few ideas to make your work easier. 
+
+**Simple vs Stateful components**
+
+Whenever possible use simple components. Simple components have better performance
+and are easier to write and maintain. 
+
+**More Smaller components**
+
+As a general rule perfer creating more simple components rather than larger 
+monolithic components. This will have the effect of simplifying the process of styles, 
+and make your work more modular.
+
+****
+
